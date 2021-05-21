@@ -51,7 +51,7 @@ export const CALCULATOR_BUTTONS = [
     type: CALCULATOR_BUTTON_TYPE.NUMBER
   },
   {
-    value: 'X',
+    value: '*',
     type: CALCULATOR_BUTTON_TYPE.ACTION
   },
   {
