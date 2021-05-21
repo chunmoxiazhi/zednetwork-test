@@ -1,0 +1,46 @@
+.popup-content {
+  padding: $space-large;
+  width: 30%;
+  box-shadow: $common-box-shadow;
+}
+.message {
+  @extend %flex-column;
+  & .message-content{
+    @extend %flex-column;
+    & > svg{
+      margin-top: 10px;
+      font-size: 35px;
+    }
+  }
+
+  & > .message-close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 16px;
+    background: $theme-background;
+    color: $theme-color;
+    border-radius: 50px;
+    border: 1px solid #cfcece;
+    box-shadow: none;
+  }
+
+  & > .message-close:hover {
+    background: $theme-color;
+    color: $theme-background;
+    border: 1px solid $theme-color;
+  }
+
+  & > .message-success {
+    color: $equal-color;
+  }
+
+  & > .message-failed {
+    color: $clear-color;
+  }
+}
+

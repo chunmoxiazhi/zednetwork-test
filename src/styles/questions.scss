@@ -1,0 +1,40 @@
+.questions-container {
+  align-items: flex-end;
+  width: 100%;
+  @extend %flex-row;
+
+  .questions-left {
+    padding: $space-large;
+    min-width: 300px;
+    @extend %flex-column;
+  
+    & > .questions-answer {
+      @extend %flex-row;
+      & > input {
+        width: 80%;
+      }
+      & > button {
+        margin-left: $space-normal;
+      }
+    }
+  
+    & > .questions-actions {
+      margin-top: $space-normal;
+      @extend %flex-row;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .questions-right {
+    height: 100%;
+    min-width: 300px;
+    padding: $space-large;
+    @extend %flex-column;
+    justify-content: center;
+  }
+}
+
+#question-desc{
+  margin-bottom: 20px;
+}

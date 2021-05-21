@@ -1,0 +1,86 @@
+$text-color: rgb(95, 95, 95);
+$theme-color: #0F5088;
+$theme-background:  #e5eefd;
+$operator-color: #FF9F43;
+$operator-background: #FFF3E8;
+$clear-color: #F96C6C;
+$clear-background: #FDEAEA;
+$equal-color: #28c76f;
+$equal-background: #E5F8ED;
+$space-small: 10px;
+$space-normal: 20px;
+$space-large: 30px;
+$common-box-shadow: 3px 3px 3px 0px #bbbbbb;
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%header-footer {
+  width: 100%;
+  color: $theme-color;
+  background-color: $theme-background;
+}
+
+h3 {
+  color: $text-color;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  color: $theme-color;
+  background-color: $theme-background;
+  box-shadow: $common-box-shadow;
+
+  &:disabled {
+    cursor: no-drop;
+    color: grey;
+    background-color: rgb(233, 233, 233);
+  }
+  &:hover:not([disabled]) {
+    color: $theme-background;
+    background-color: $theme-color;
+  }
+}
+
+input {
+  width: 100%;
+  font-size: 22px;
+  padding: 10px;
+  text-align: right;
+  color: $text-color;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  box-shadow: $common-box-shadow;
+
+  &:focus {
+    border: none;
+  }
+}
+
